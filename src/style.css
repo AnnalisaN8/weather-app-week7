@@ -1,3 +1,95 @@
-h1 {
-  color: blue;
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #5b6275;
+  text-align: center;
+}
+
+.card {
+  display: block;
+  margin: 75px auto;
+  width: 2000px;
+  max-width: fit-content;
+  max-height: fit-content;
+  padding-bottom: 20px;
+}
+.card-header {
+  padding: 20px;
+}
+form {
+  text-align: center;
+}
+input {
+  padding-top: 5px;
+}
+::placeholder {
+  font-size: 20px;
+  opacity: 0.5;
+  text-align: center;
+}
+button {
+  color: #5b6275;
+  background: #dfe0e4;
+  text-align: center;
+  font-size: 12px;
+  border-style: none;
+  border: 1px solid #dde0e3;
+  width: 34px;
+  height: 34px;
+  vertical-align: top;
+  margin-left: 2px;
+}
+.fa-search {
+  padding: 5px 0 0 0;
+}
+
+h2 {
+  text-align: left;
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 0;
+  line-height: 1.1;
+}
+
+.today-date {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 0;
+  margin-left: 3px;
+}
+.side-temp {
+  text-align: left;
+}
+.col-4 {
+  padding-top: 20px;
+}
+.large-temp {
+  font-size: 20px;
+}
+.max-temp {
+  color: #e20200;
+}
+.min-temp {
+  color: #036ec5;
+}
+.farenheit {
+  text-decoration: none;
+  color: #5b6275;
+  opacity: 50%;
+}
+.farenheit:hover {
+  color: #242528;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.col-sm {
+  font-size: 12px;
+}
+
+footer {
+  font-size: 12px;
 }

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,10 +11,122 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1485c5dabb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <a href="" class="btn btn-primary">Click me</a>
+    <div class="container">
+      <div class="card border-secondary mb-3">
+        <div class="card-header">
+          <form id="city-search">
+            <input
+              type="text"
+              placeholder="Enter your city"
+              autocomplete="off"
+              autofocus="on"
+              id="city-input"
+            />
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+
+            <button id="current-position">
+              <img src="img/current-position-icon.svg" />
+            </button>
+          </form>
+        </div>
+        <div class="card-body text-secondary">
+          <div class="row">
+            <div class="col-9 side-temp">
+              <h2 id="city-name"></h2>
+              <h4 class="today-date"></h4>
+            </div>
+            <div class="col-3 side-temp">
+              <h4>
+                Max
+                <span class="large-temp max-temp" id="max-temp"> </span>
+              </h4>
+              <div class="row">
+                <div class="col-12 side-temp">
+                  <h4>
+                    Now
+                    <span class="large-temp now-temp" id="now-temp"> </span>
+                  </h4>
+                </div>
+                <div class="col-12 side-temp">
+                  <h4>
+                    Min
+                    <span class="large-temp min-temp" id="min-temp"> </span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row container-5days">
+            <div class="col-sm">
+              Today
+              <br />
+              <i class="fas fa-cloud-sun icon"></i>
+              <br />
+              13°C <br />
+              -1°C
+            </div>
+            <div class="col-sm">
+              Tomorrow
+              <br />
+              <i class="fas fa-sun icon"></i>
+              <br />
+              9°C <br />
+              0°C
+            </div>
+            <div class="col-sm">
+              Wednesday
+              <br />
+              <i class="fas fa-cloud-sun icon"></i>
+              <br />
+              7°C <br />
+              1°C
+            </div>
+            <div class="col-sm">
+              Thursday
+              <br />
+              <i class="fas fa-cloud-showers-heavy icon"></i>
+              <br />
+              8°C <br />
+              0°C
+            </div>
+            <div class="col-sm">
+              Friday
+              <br />
+              <i class="fas fa-cloud-showers-heavy icon"></i>
+              <br />
+              7°C <br />
+              -3°C
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a
+        href="https://github.com/AnnalisaN8/Weather-app-project"
+        target="_blank"
+        rel="noreferrer"
+        >Open-source code</a
+      >
+      by Annalisa Napoli
+    </footer>
     <script src="src/app.js"></script>
   </body>
 </html>
