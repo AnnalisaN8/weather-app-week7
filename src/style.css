@@ -64,6 +64,7 @@ li:first-letter {
 
 .weather-temperature a {
   text-decoration: none;
+  color: #ec6e4b;
 }
 
 .weather-temperature .active {
@@ -73,4 +74,13 @@ li:first-letter {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+#icon {
+  position: relative;
+  top: -26px;
+}
+
+small a {
+  color: #5b6369;
 }
